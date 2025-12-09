@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;     /* Deep Black */
+            --card-bg: #1e1e1e;      /* Dark Grey */
+            --accent: #c0a062;       /* Gold/Bronze for luxury feel */
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 420px;
+            border: 1px solid #333; /* Subtle border */
+            border-radius: 8px;     /* Sharper corners for modern look */
+            text-align: center;
+            padding: 40px 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent); /* Gold border around photo */
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; /* Editorial Font */
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            margin-bottom: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            box-sizing: border-box; /* Ensures padding doesn't break width */
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #000;
+            font-weight: 700;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e0c07e;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 1px solid #555;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="profile.jpg" alt="Photographer Portrait" class="profile-pic">
+        
+        <h1>Emmanuel David</h1>
+        <div class="subtitle">Portrait & Wedding Photography</div>
+
+        <p>Capturing life's most fleeting moments with a cinematic eye. Specializing in natural light portraits, events, and brand storytelling.</p>
+
+        <a href="https://forms.google.com/your-form-link-here" target="_blank" class="btn btn-primary">
+            Book a Session
+        </a>
+
+        <a href="tel:+2348000000000" class="btn btn-secondary">
+            Call: +234 800 000 0000
+        </a>
+
+        <div class="footer">
+            &copy; 2025 Emmanuel David Photography. Lagos, NG.
+        </div>
+    </div>
+
+</body>
+</html>
