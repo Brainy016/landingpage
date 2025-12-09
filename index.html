@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breeve Photography</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --bg-color: #121212;
@@ -56,17 +61,19 @@
             font-weight: 300;
             letter-spacing: 2px;
             text-transform: uppercase;
-            font-size: 1.6rem; /* Slightly larger for Brand Name */
+            font-size: 1.6rem;
             margin: 0;
         }
 
+        /* UPDATED: CURSIVE STYLE */
         .tagline {
+            font-family: 'Great Vibes', cursive; /* The new font */
             color: var(--accent);
-            font-size: 0.8rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-top: 10px;
+            font-size: 2.2rem; /* Made larger to be readable */
+            letter-spacing: 1px;
+            margin-top: 5px;
             margin-bottom: 25px;
+            font-weight: 400;
         }
 
         p {
@@ -93,7 +100,6 @@
             border-radius: 4px;
         }
 
-        /* Gold Button (Primary) */
         .btn-primary {
             background-color: var(--accent);
             color: #000;
@@ -105,7 +111,6 @@
             color: var(--accent);
         }
 
-        /* White Outline (Secondary) */
         .btn-secondary {
             border: 1px solid var(--text-muted);
             color: var(--text-muted);
@@ -115,7 +120,6 @@
             color: var(--text-main);
         }
 
-        /* Instagram Style Button */
         .btn-insta {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             color: white;
@@ -138,6 +142,7 @@
         </div>
 
         <h1>Breeve Photography</h1>
+        
         <div class="tagline">Portrait & Lifestyle</div>
 
         <p>Capturing life's fleeting moments with a unique perspective. Specialized in outdoor shoots, events, and creative portraits.</p>
