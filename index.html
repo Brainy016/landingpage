@@ -107,3 +107,54 @@
 
         /* White Outline (Secondary) */
         .btn-secondary {
+            border: 1px solid var(--text-muted);
+            color: var(--text-muted);
+        }
+        .btn-secondary:hover {
+            border-color: var(--text-main);
+            color: var(--text-main);
+        }
+
+        /* Instagram Style Button */
+        .btn-insta {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+        .btn-insta:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="studio-card">
+        
+        <div class="profile-frame">
+            <img src="profile.jpg" alt="Breeve Photography" class="profile-pic">
+        </div>
+
+        <h1>Breeve Photography</h1>
+        <div class="tagline">Portrait & Lifestyle</div>
+
+        <p>Capturing life's fleeting moments with a unique perspective. Specialized in outdoor shoots, events, and creative portraits.</p>
+
+        <a href="https://forms.google.com/your-form-link" class="btn btn-primary">
+            Book a Session
+        </a>
+
+        <a href="https://instagram.com/your_username" target="_blank" class="btn btn-insta">
+            Follow on Instagram
+        </a>
+
+        <a href="tel:+2348000000000" class="btn btn-secondary">
+            Call for Inquiries
+        </a>
+
+    </div>
+
+</body>
+</html>
